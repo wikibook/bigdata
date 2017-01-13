@@ -1,0 +1,1 @@
+mahout seqdumper -i /pilot-pjt/mahout/clustering/kmeans/output/clusteredPoints/ -o /home/pilot-pjt/mahout-data/clustering/output/seqdumper_result.txt
