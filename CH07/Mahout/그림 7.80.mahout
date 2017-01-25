@@ -1,0 +1,1 @@
+mahout canopy -i /pilot-pjt/mahout/clustering/output/vec/tf-vectors/ -o /pilot-pjt/mahout/clustering/canopy/out -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -t1 50 -t2 45 -ow
