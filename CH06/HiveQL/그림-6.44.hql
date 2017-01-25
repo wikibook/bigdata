@@ -1,1 +1,0 @@
-select * from SmartCar_Status_Info limit 5;

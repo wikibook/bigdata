@@ -1,1 +1,0 @@
-mahout clusterdump -i /pilot-pjt/mahout/clustering/kmeans/output/clusters-*-final -p /pilot-pjt/mahout/clustering/kmeans/output/clustersPoints -o /home/pilot-pjt/mahout-data/clustering/output/clusterdump_result.txt
