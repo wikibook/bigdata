@@ -1,0 +1,9 @@
+
+
+1. Zeppelin의 다운로드 URL을 변경 합니다. 책에서 사용하는 0.6.2 버젼의 미러 URL이 삭제 되었습니다. 변경후의 URL을 이용 하시면 됩니다.
+
+Page 300 
+
+* 변경전: wget http://mirror.apache-kr.org/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz 
+
+* 변경후: wget http://archive.apache.org/dist/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz
