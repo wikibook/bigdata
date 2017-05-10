@@ -1,9 +1,55 @@
 
+##########################################################
+# 파일럿 프로젝트 실습에 영향을 미치는 주요 오탈자들 입니다. #
+##########################################################
 
-1. Zeppelin�� �ٿ�ε� URL�� ���� �մϴ�. å���� ����ϴ� 0.6.2 ������ �̷� URL�� ���� �Ǿ����ϴ�. �������� URL�� �̿� �Ͻø� �˴ϴ�.
+1. 108쪽, 3번째 줄
+   CM 홈 → [Hue] ==> CM 홈 → [Flume]
 
-Page 300 
 
-* ������: wget http://mirror.apache-kr.org/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz 
+2. 109쪽, 밑에서 첫 번째 줄
+   카프카가 Server01에 ==> 카프카가 Server02에
+  
 
-* ������: wget http://archive.apache.org/dist/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz
+3. 120쪽, 1번째 줄
+   /home/pilot-pjt-simulator ==> /home/pilot-pjt/working
+
+  
+4. 141쪽, 7번째 줄
+   /home/pilot-pjt-simulator ==> /home/pilot-pjt/working
+
+
+5. 222쪽, 중간 8번째 줄 (※저사양 PC의 경우만 해당)
+   선택: HBase Thrift Server(server01) ==> HBase Thrift Server(server02)  
+
+
+6. 300쪽, 밑에서 2번째 줄의 제플린 다운로드 링크
+   http://mirror.apache-kr.org/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz
+   ==>
+   http://archive.apache.org/dist/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz
+
+
+7. 341쪽, 밑에서 2번째 줄
+   192.168.56.10 ==> 192.168.56.101
+
+
+
+#########################################################
+# 파일럿 프로젝트 실습중 발생 할 수 있는 문제들 입니다. #
+#########################################################
+
+1. 파일럿 환경에서 이상현상 발생시, 설치된 가상머신에서 서버들의 로그를 확인
+   ==> Hadoop 에코시스템 서버들의 로그 위치: /var/log/디렉토리(cloudera, Hadoop, Oozie 등) 
+   ==> Redis 서버 로그 위치: /var/log/redis_6379.log
+   ==> Storm 서버 로그 위치: /home/pilot-pjt/storm/logs/
+   ==> Zeppelin 서버 로그 위치: /home/pilot-pjt/zeppelin-0.6.2-bin-all/logs
+
+
+2. 가상머신의 비정상 종료등으로 HDFS의 Safe 모드 발생시
+   ==> 안전모드 해제: $ hdfs dfsadmin -safemode leave
+
+
+3. 가상머신의 비정상 종료등으로 인해 HDFS에 CORRUPT BLOCKS/FILES 등 발생해 복구 불가시
+   ==> 손상된 파일 강제 삭제: $ hdfs fsck / -delete
+   
+   
