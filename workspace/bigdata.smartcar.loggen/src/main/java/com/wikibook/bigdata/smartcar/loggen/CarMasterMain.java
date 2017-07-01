@@ -71,8 +71,8 @@ public class CarMasterMain {
 
 	public static String getJob() {
 
-		String[] rData = {"무직","회사원","자영업","공무원","학생"}; 
-		String result = rData[randomRange(0, 4)] ;
+		String[] rData = {"회사원","공무원","개인사업","전문직","프리랜서","주부","학생"}; 
+		String result = rData[randomRange(0, 6)] ;
 
 		return result;
 
