@@ -1,0 +1,5 @@
+# 새로운 두 개의 주행정보를 분류합니다.
+new_samples = np.array(
+    [[2, 0, 0, 1, 2, 0, 2, 0, 0, 1], [1, 1, 2, 2, 2, 1, 2, 1, 2, 2]], dtype=int)
+y = list(classifier.predict(new_samples, as_iterable=True))
+print ('예측: {}'.format(str(y)))

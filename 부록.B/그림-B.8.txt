@@ -1,0 +1,15 @@
+# 데이터셋
+TEST_DATA = "C://test_data/CarDrivingIncidentInfo_Test.csv"
+
+# 데이터셋을 불러옵니다.
+test_set = tf.contrib.learn.datasets.base.load_csv_with_header(
+    filename=TEST_DATA,
+    target_dtype=np.int,
+    features_dtype=np.int)
+
+# 정확도를 평가합니다.
+accuracy_score = classifier.evaluate(x=test_set.data,
+                                     y=test_set.target)["accuracy"]
+
+# 평가 결과를 출력합니다.
+print('정확도: {0:f}'.format(accuracy_score))
