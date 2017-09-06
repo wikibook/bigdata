@@ -55,8 +55,8 @@
   
 5. 141쪽, 7번째 줄
    /home/pilot-pjt-simulator ==> /home/pilot-pjt/working
-
-
+   
+   
 6. 222쪽, 중간 8번째 줄 (※저사양 PC의 경우만 해당)
    선택: HBase Thrift Server(server01) ==> HBase Thrift Server(server02)  
 
@@ -82,7 +82,17 @@
    p343, 6번째줄의 PostgreSQL 라이브러리 경로중 "CDH-5.9.0-1.cdh5.9.0.p0.23" 부분을 ==> "CDH"로 변경
    p343, 7번째줄의 Sqoop 라이브러리 경로중 "CDH-5.9.0-1.cdh5.9.0.p0.23" 부분을 ==> "CDH"로 변경
 
+10. 175쪽, 3번째 줄
+    HBaseBolt.java ==> SmartCarDriverTopology.java
 
+11. 181쪽, 3번째줄
+    예제 5.8 ==> 예제 5.10
+
+12. 182쪽, 밑에서 4번째 줄
+    HBaseBolt.java ==> SmartCarDriverTopology.java
+
+13. 182쪽, 밑에서 6번째 줄
+    예제 5.9 ==> 예제 5.11
 
 ###################################
 # 파일럿 프로젝트 실습중 참고 사항들 #
