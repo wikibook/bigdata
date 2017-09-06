@@ -34,7 +34,7 @@ public class EsperBolt extends BaseBasicBolt{
 		espService = EPServiceProviderManager.getDefaultProvider(configuration);
 		espService.initialize();
 		
-		int avgOverSpeed = 30;
+		int avgOverSpeed = 80;
 		int windowTime  = 30;
 		
 		String overSpeedEpl =  "SELECT date, carNumber, speedPedal, breakPedal, "
