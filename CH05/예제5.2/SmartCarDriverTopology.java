@@ -88,12 +88,14 @@ public class SmartCarDriverTopology {
 		HBaseBolt hbaseBolt = new HBaseBolt(hTableConfig);
 		driverCarTopologyBuilder.setBolt("HBASE", hbaseBolt, 1).shuffleGrouping("splitBolt");
 		
-		
 		// Redis Bolt
-		JedisPoolConfig jedisPoolConfig = new JedisPoolConfig.Builder().setHost("server02.hadoop.com").setPort(6379).build();
+		String redisServer = "server02.hadoop.com";
+		int redisPort = 6379;
+		JedisPoolConfig jedisPoolConfig = new JedisPoolConfig.Builder().setHost(redisServer).setPort(redisPort).build();
 		RedisBolt redisBolt = new RedisBolt(jedisPoolConfig);
 		
 		driverCarTopologyBuilder.setBolt("REDIS", redisBolt, 1).shuffleGrouping("esperBolt");
+		
 
 		return driverCarTopologyBuilder.createTopology();
 	}
