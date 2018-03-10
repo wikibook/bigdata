@@ -1,4 +1,13 @@
 0. 파일럿 프로젝트 확장하기 강의: https://www.youtube.com/playlist?list=PLqDU9MvIXrSEWi2ls4P71aFnbp5Vz2Vlx
+   01. Pig 활용
+   02. Sqoop Import 활용
+   03. Tensorflow 설치
+   04. Oozie Fork 활용
+   05. NiFi 설치
+   06. NiFi 활용
+   07. Hive Bucket 활용
+   08. Hadoop HDFS 명령
+   09. Hadoop WebHDFS 활용
 
 1. 예제파일 압축 해제는 외부 Zip 프로그램(알집, 빵집 등)을 이용하세요.
    ※ 윈도우7의 내장된 Zip 프로그램 이용시 예제파일이 깨집니다.
