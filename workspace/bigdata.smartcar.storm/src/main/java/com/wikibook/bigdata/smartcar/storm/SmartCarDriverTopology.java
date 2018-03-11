@@ -38,7 +38,7 @@ public class SmartCarDriverTopology {
 		config.setDebug(true);
 		config.put("HBASE_CONFIG",HBaseConfig);
 
-		config.put(Config.NIMBUS_HOST, "server01.hadoop.com");
+		config.put(Config.NIMBUS_HOST, "server02.hadoop.com");
 		config.put(Config.NIMBUS_THRIFT_PORT, 6627);
 		config.put(Config.STORM_ZOOKEEPER_PORT, 2181);
 		config.put(Config.STORM_ZOOKEEPER_SERVERS, Arrays.asList("server02.hadoop.com"));
